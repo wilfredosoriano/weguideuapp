@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="253dp"
+        android:layout_height="51dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="textPersonName"
+        android:drawablePadding="5dp"
+        android:drawableStart="@drawable/ic_baseline_call_24"
+        android:drawableLeft="@drawable/ic_baseline_call_24"
+        app:layout_constraintBottom_toTopOf="@+id/Button_Call"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.892" />
+
+    <ImageButton
+        android:id="@+id/Button_Call"
+        android:layout_width="81dp"
+        android:layout_height="79dp"
+        android:layout_marginBottom="260dp"
+        android:background="@drawable/bg_round"
+        android:src="@drawable/ic_call"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="131dp"
+        android:layout_height="45dp"
+        android:text="Call PWD"
+        android:textSize="30dp"
+        android:textColor="#00BCD4"
+        app:layout_constraintBottom_toTopOf="@+id/etPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.674" />
+</androidx.constraintlayout.widget.ConstraintLayout>
